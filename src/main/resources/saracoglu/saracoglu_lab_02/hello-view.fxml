@@ -77,7 +77,7 @@
          <Insets />
       </VBox.margin>
    </HBox>
-    <Button alignment="CENTER" contentDisplay="RIGHT" onAction="#calculatePayment" prefWidth="80.0" text="Calculator">
+    <Button fx:id="calculatorBtn" alignment="CENTER" contentDisplay="RIGHT" onAction="#calculatePayment" prefWidth="80.0" text="Calculator">
       <VBox.margin>
          <Insets bottom="10.0" left="225.0" />
       </VBox.margin>

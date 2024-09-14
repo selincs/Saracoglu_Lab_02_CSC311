@@ -2,6 +2,7 @@ package saracoglu.saracoglu_lab_02;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
@@ -15,6 +16,9 @@ public class HelloController {
 
     @FXML
     private TextArea annIntRateTA;
+
+    @FXML
+    private Button calculatorBtn;
 
     @FXML
     private Label loanAmountLbl;
@@ -40,6 +44,7 @@ public class HelloController {
     @FXML
     private TextArea totalPayTA;
 
+    //On calculatorBtn press, method is called
     @FXML
     void calculatePayment(ActionEvent event) {
         //Parse user input text values -> Lacks validation for incorrect inputs
