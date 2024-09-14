@@ -43,7 +43,7 @@ public class HelloController {
     @FXML
     void calculatePayment(ActionEvent event) {
         //Parse user input text values -> Lacks validation for incorrect inputs
-        //Convert annIntRate% to an appropriate double value for int rate, divide by 100
+        //Convert annIntRate% to an appropriate double value for interest rate, divide by 100
         double annIntRate = Double.parseDouble(annIntRateTA.getText()) / 100;
 
         //Number of years
@@ -67,7 +67,7 @@ public class HelloController {
         totalPay = bdTotalPay.doubleValue();
         monthlyPay = bdMonthlyPay.doubleValue();
 
-        //Display Rounded totals to user
+        //Display rounded totals to user
         monthlyPayTA.setText("$" + monthlyPay);
         totalPayTA.setText("$" + totalPay);
     }
